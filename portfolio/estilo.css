@@ -1,0 +1,114 @@
+.navcor{
+	background-color: black;
+}
+
+.rcorners{
+	border-radius: 30px 30px 30px 30px;	
+}
+
+.navsize{
+	height: 40px;
+}
+.navtextcolor{
+	color: black;	
+}
+.color1{
+	background-color: #fdcb6e;
+}
+
+.textctype{
+	font-weight: bold;
+	font-size: 100px;
+	color: #444950;	
+}
+
+.retangulo{
+	height: 200px;
+	width: 400px;
+	background-color:#218c74;
+	margin-top: 100px;
+	text-align: center;
+	font-family: 'Red Hat Display', sans-serif;;
+
+}
+
+.textretangulo{
+	font-weight: bold;
+	font-size: 100px;
+	font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif';
+	color: white;
+	
+}
+.retanguloprojeto{
+	font-size: 1rem; 
+	font-family: "Arial, sans-serif";
+	display: flex;
+	text-align: center;
+	color: black;
+	background-color: white;
+	letter-spacing: 0px;
+}
+
+.retanguloprojetodois{
+	background-image: url("img/pgr.PNG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.imgtransition{
+	width:260; 
+	height:280px;
+	transition: height 1s;
+		
+}
+.imgtransition:hover {
+	height: 380px;
+}
+
+.roundedbuttons{
+	border-radius: 15px ;
+}
+
+.paletecolor{
+	background-color: transparent;
+}
+.paletecolor:hover{
+	background-color: #ffb142;
+}
+.avatar {
+	height: 300px;
+	width: 350px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	overflow: hidden;
+	
+	animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.flet1{
+	background-color: #ecf0f1;
+	display: flex;
+	align-items: center;
+	font-family: Apple Chancery, cursive;
+	font-size: 50px;
+}
+.flet2{
+	display: flex;
+	align-items: center;
+}
+.flet3{
+	font-family:  Arial;
+	display: flex;
+	align-items: center;
+}
