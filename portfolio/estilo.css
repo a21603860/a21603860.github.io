@@ -115,6 +115,9 @@
 .html{
 	scroll-behavior: smooth;
 }
-.monospace{
-	font-family: "luciada console", courier, monospace;
+.outrosprojetostexto{
+	font-family: 'Staatliches', cursive;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 5rem;
 }
