@@ -1,7 +1,7 @@
 .navcor{
-	background-color: black;
-}
+	background-color: transparent;
 
+}
 .rcorners{
 	border-radius: 30px 30px 30px 30px;	
 }
@@ -21,14 +21,18 @@
 	font-size: 100px;
 	color: #444950;	
 }
+.bodybackground{
+	background-color: #ecf0f1;
+}
 
 .retangulo{
 	height: 200px;
 	width: 400px;
 	background-color:#218c74;
-	margin-top: 100px;
-	text-align: center;
-	font-family: 'Red Hat Display', sans-serif;;
+	margin-top: 50px;
+	font-family: 'Red Hat Display', sans-serif;
+	display: flex;
+	align-items: center;
 
 }
 
@@ -49,39 +53,23 @@
 	letter-spacing: 0px;
 }
 
-.retanguloprojetodois{
-	background-image: url("img/pgr.PNG");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.imgtransition{
-	width:260; 
-	height:280px;
-	transition: height 1s;
-		
-}
-.imgtransition:hover {
-	height: 380px;
-}
-
 .roundedbuttons{
 	border-radius: 15px ;
 }
 
-.paletecolor{
-	background-color: transparent;
+.hovershadow{
+	background-color: white;
 }
-.paletecolor:hover{
-	background-color: #ffb142;
+.hovershadow:hover{
+	box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+	
 }
 .avatar {
-	height: 300px;
-	width: 350px;
+	height: 200px;
+	width: 240px;
 	box-sizing: border-box;
 	border: 5px white solid;
-	overflow: hidden;
-	
+	overflow: hidden;	
 	animation: float 6s ease-in-out infinite;
 }
 @keyframes float {
@@ -107,17 +95,117 @@
 	display: flex;
 	align-items: center;
 }
-.flet3{
-	font-family:  Arial;
-	display: flex;
-	align-items: center;
-}
+
 .html{
 	scroll-behavior: smooth;
 }
-.outrosprojetostexto{
-	font-family: 'Staatliches', cursive;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 5rem;
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 225px;
+	grid-gap: 1em;
+	justify-items: stretch;
+	align-items: stretch;
+}
+.wrapper >div{
+	padding: 1em;
+}
+
+.img{
+  position: relative;
+  width: 225px;
+  height: 462.02px;
+  background-image: url('img/4.png');
+  background-size: 500px;
+  transform: rotate(0.14deg);
+}
+.centrar{
+	/*display: flex;
+	align-items: center;*/
+	align-items: center;
+	text-align: center;
+	position: relative;
+}
+.box0{
+	position: relative;
+	width: 210.05px;
+	height: 462.02px;
+	background-image: url('img/4.png');
+	background-size: 500px;
+	transform: rotate(0.14deg);
+	grid-column: 1/2;
+	grid-row: 1/3;
+}
+.box1{
+	grid-column: 2/3;
+	background-color: #4b4b4b;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	color: white;
+	
+}
+
+.box2{
+	background-color:#4b4b4b;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	color: white;
+}
+
+.box3{
+	grid-column: 4/5;
+	grid-row: 1/3;
+	background-color:#4b4b4b;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	color: white;
+
+}
+.box4{
+	background-color:#4b4b4b;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	color: white;
+}
+.box5{
+	background-color:#4b4b4b;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	color: white;
+
+}
+.namebadge{
+	height: 30px;
+	width: 200px;
+	border-radius: 30px;
+	background-color: black;
+	font-size: 20px;
+	text-align: center;
+	align-items: center;
+	
+
+}
+.carta1{
+	position: absolute;
+	height: 895px;
+	top: 60px;
+	filter: drop-shadow(5px 5px 20px rgba(0,0,0,0.25));
+}
+.projectcards{
+	height: 700px;
+	background-color: #2d3436;
+	color: black;
+	opacity: 0.5;
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.modal-xl{
+	width: 1140px;
+}
+.bodycolor{
+	background: linear-gradient(146.62deg, #E08E8E 7.59%, rgba(255, 255, 255, 0) 80.14%),
+	 linear-gradient(242.15deg, #BD1DE6 18.09%, rgba(255, 255, 255, 0) 100%), #001970;
+	backdrop-filter: blur(10px);
+}
+.bodycolor2{
+	background: linear-gradient(119.71deg, #0C2991 3.57%, rgba(255, 255, 255, 0) 92.2%), #000000;
 }
