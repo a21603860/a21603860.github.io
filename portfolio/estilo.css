@@ -28,8 +28,8 @@
 .retangulo{
 	height: 200px;
 	width: 400px;
-	background-color:#218c74;
-	margin-top: 50px;
+	background-color: black;
+	margin-top: 20px;
 	font-family: 'Red Hat Display', sans-serif;
 	display: flex;
 	align-items: center;
@@ -57,10 +57,7 @@
 	border-radius: 15px ;
 }
 
-.hovershadow{
-	background-color: white;
-}
-.hovershadow:hover{
+.projectcards0:hover{
 	box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 	
 }
@@ -187,6 +184,11 @@
 	top: 60px;
 	filter: drop-shadow(5px 5px 20px rgba(0,0,0,0.25));
 }
+.projectcards0{
+	background-color: white;
+	height: 700px;
+	margin-top: 20px;
+}
 .projectcards{
 	height: 700px;
 	background-color: #2d3436;
@@ -196,16 +198,83 @@
 	display: flex;
 	align-items: center;
 	text-align: center;
+	font-weight: bold;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	margin-top: 20px; 
+	margin-bottom: 20px;
 }
+.projectcardstext{
+	font-size: 10px;
+	 margin-top: 50px;
+}
+
 .modal-xl{
 	width: 1140px;
 }
-.bodycolor{
-	background: linear-gradient(146.62deg, #E08E8E 7.59%, rgba(255, 255, 255, 0) 80.14%),
-	 linear-gradient(242.15deg, #BD1DE6 18.09%, rgba(255, 255, 255, 0) 100%), #001970;
-	backdrop-filter: blur(10px);
+.textoh1{
+	letter-spacing:-0.05en;
+	font-weight: bold;
+	font-size: 40px;
 }
-.bodycolor2{
-	background: linear-gradient(119.71deg, #0C2991 3.57%, rgba(255, 255, 255, 0) 92.2%), #000000;
+.rowedit{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #c4c4c4;
+}
+.cardper{
+	margin-left: 150px;
+	align-items: center;
+	text-align: center;
+}
+@media screen and (max-width: 500px){
+	.projectcards0{
+		height: 300px;
+		width: 400px;
+		background-color: white;
+		color: #000000;
+		font-size: 12px;
+		flex-direction: column;
+		align-items: center !important;
+		text-align: center !important;
+		display: flex !important;
+	}
+	.projectcards{
+		height: 300px;
+		background-color: #2d3436;
+		color: #000000;
+		font-size: 12px;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	.textoh1{
+		font-size: 12px;
+		font-weight: bold;
+	}
+	h3{
+		font-size: 12px;
+	} 
+	button{
+		height: 10px;
+		display: none !important;
+	}
+	.avatar {
+		height: 90px;
+		width: 100px;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	img{
+		display: none;
+	}
+	
+	.projectcardstext{
+		display: none;
+	}
+	.cardper{
+		margin-left: 20px;
+		text-align: center !important;
+		align-items: center !important;
+	}
+	
 }
