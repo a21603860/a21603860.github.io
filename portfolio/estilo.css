@@ -298,14 +298,14 @@
 	}
 	.wrapper{
 		display: grid;
-		grid-template-columns: 360px;
-		grid-auto-rows: 360px;
+		grid-template-columns: 350px;
+		grid-auto-rows: 350px;
 		grid-template-rows: 1.2fr 150px 150px 150px 150px 150px 150px;
 		grid-gap: 20px;
 	}
 	.box0{
 		position: relative;
-		width: 360px;
+		width: 350px;
 		height: 300px;
 		background-image: url('img/4.png');
 		background-size: 470px;
