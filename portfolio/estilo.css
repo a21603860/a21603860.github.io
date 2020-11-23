@@ -289,14 +289,14 @@
 	}
 	.wrapper{
 		display: grid;
-		grid-template-columns: 355px;
-		grid-auto-rows: 355px;
+		grid-template-columns: 320px;
+		grid-auto-rows: 320px;
 		grid-template-rows: 1.2fr 150px 150px 150px 150px 150px 150px;
 		grid-gap: 20px;
 	}
 	.box0{
 		position: relative;
-		width: 355px;
+		width: 320px;
 		height: 300px;
 		background-image: url('img/4.png');
 		background-size: 470px;
