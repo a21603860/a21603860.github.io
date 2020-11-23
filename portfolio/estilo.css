@@ -191,6 +191,7 @@
 	width: 390px;
 	margin-top: 20px; 
 	margin-bottom: 20px;
+	padding: none;
 }
 .projectcards{
 	height: 700px;
@@ -205,6 +206,8 @@
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 	margin-top: 20px; 
 	margin-bottom: 20px;
+	padding: none;
+
 }
 .projectcardstext{
 	font-size: 10px;
@@ -224,6 +227,7 @@
 	margin-bottom: 20px;
 	background-color: #c4c4c4;
 	flex-direction: row;
+	padding: none;
 }
 /*cardper{
 	margin-left: 150px;
@@ -240,6 +244,8 @@
 		align-items: center !important;
 		text-align: center !important;
 		display: flex !important;
+		padding: 5px;
+
 	}
 	.projectcards{
 		height: 600px;
@@ -248,6 +254,8 @@
 		color: #000000;
 		font-size: 12px;
 		align-items: center;
+		padding: 5px;
+
 		
 	}
 	.retangulo{	
@@ -286,17 +294,18 @@
 		margin-bottom: 20px;
 		background-color: #c4c4c4;
 		flex-direction: column;
+		padding: 10px;
 	}
 	.wrapper{
 		display: grid;
-		grid-template-columns: 320px;
-		grid-auto-rows: 320px;
+		grid-template-columns: 345px;
+		grid-auto-rows: 345px;
 		grid-template-rows: 1.2fr 150px 150px 150px 150px 150px 150px;
 		grid-gap: 20px;
 	}
 	.box0{
 		position: relative;
-		width: 320px;
+		width: 345px;
 		height: 300px;
 		background-image: url('img/4.png');
 		background-size: 470px;
