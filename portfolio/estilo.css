@@ -234,6 +234,9 @@
 	align-items: center;
 	text-align: center;
 }*/
+.backgroundcolor{
+	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4BBBB;
+}
 @media screen and (max-width: 500px){
 	.projectcards0{
 		height: 600px;
