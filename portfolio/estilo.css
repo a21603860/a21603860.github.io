@@ -25,8 +25,7 @@
 	background-color: #ecf0f1;
 }
 
-.retangulo{
-	
+.retangulo{	
 	background-color: black;
 	margin-top: 20px;
 	font-family: 'Red Hat Display', sans-serif;
@@ -37,28 +36,15 @@
 	color: white;
 }
 
-
-.retanguloprojeto{
-	font-size: 1rem; 
-	font-family: "Arial, sans-serif";
-	display: flex;
-	text-align: center;
-	color: black;
-	background-color: white;
-	letter-spacing: 0px;
-}
-
 .roundedbuttons{
 	border-radius: 15px ;
 }
 
-.projectcards0:hover{
-	box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-	
-}
+
 .avatar {
 	height: 200px;
 	width: 240px;
+	margin-top: 40px;
 	box-sizing: border-box;
 	border: 5px white solid;
 	overflow: hidden;	
@@ -97,7 +83,7 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;	
 	grid-auto-rows: 225px;
-	grid-gap: 1em;
+	grid-gap: 10px;
 }
 .wrapper >div{
 	padding: 1em;
@@ -118,7 +104,7 @@
 	text-align: center;
 	position: relative;
 }
-.box0{
+.boximage{
 	position: relative;
 	width: 210.05px;
 	height: 462.02px;
@@ -128,7 +114,7 @@
 	grid-column: 1/2;
 	grid-row: 1/3;
 }
-.box1{
+.formacao{
 	
 	background-color: #4b4b4b;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -137,7 +123,7 @@
 	text-align: none;
 }
 
-.box2{
+.diploma{
 	background-color:#4b4b4b;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 	color: white;
@@ -145,7 +131,7 @@
 	text-align: none;
 }
 
-.box3{
+.sobre{
 	grid-column: 4/5;
 	grid-row: 1/3;
 	background-color:#4b4b4b;
@@ -154,14 +140,14 @@
 	align-items: none;
 	text-align: none;
 }
-.box4{
+.competencia{
 	background-color:#4b4b4b;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 	color: white;
 	align-items: none;
 	text-align: none;
 }
-.box5{
+.contacto{
 	background-color:#4b4b4b;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 	color: white;
@@ -175,8 +161,7 @@
 	background-color: black;
 	font-size: 20px;
 	text-align: center;
-	align-items: center;
-	
+	align-items: center;	
 
 }
 .carta1{
@@ -185,17 +170,21 @@
 	top: 60px;
 	filter: drop-shadow(5px 5px 20px rgba(0,0,0,0.25));
 }
-.projectcards0{
+.projectocard1{
 	background-color: white;
-	height: 700px;
-	width: 390px;
+	height: 650px;
+	width: 400px;
 	margin-top: 20px; 
 	margin-bottom: 20px;
 	padding: none;
 }
-.projectcards{
-	height: 700px;
-	width: 390px;
+.projectocard1:hover{
+	box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+	
+}
+.projectocard2{
+	height: 650px;
+	width: 400px;
 	background-color:#84817a ;
 	color: black;
 	display: flex;
@@ -212,6 +201,7 @@
 .projectcardstext{
 	font-size: 10px;
 	padding: 5px;
+	margin-bottom: 20px;
 }
 
 .modal-xl{
@@ -222,13 +212,14 @@
 	font-weight: bold;
 	font-size: 40px;
 }
-.rowedit{
+/*.row{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	background-color: #c4c4c4;
 	flex-direction: row;
 	padding: none;
-}
+	text-align: center;
+}*/
 /*cardper{
 	margin-left: 150px;
 	align-items: center;
@@ -236,11 +227,12 @@
 }*/
 .backgroundcolor{
 	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4BBBB;
+	padding: 60px;
 }
 @media screen and (max-width: 500px){
-	.projectcards0{
-		height: 600px;
-		width: 375px ;
+	.projectocard1{
+		height: 400px;
+		width: 300px ;
 		background-color: white;
 		color: #000000;
 		font-size: 12px;
@@ -250,9 +242,9 @@
 		padding: 5px;
 
 	}
-	.projectcards{
-		height: 600px;
-		width: 375px;
+	.projectocard2{
+		height: 400px;
+		width: 300px;
 		background-color: #2d3436;
 		color: #000000;
 		font-size: 12px;
@@ -260,6 +252,30 @@
 		padding: 5px;
 
 		
+	}
+	.projectcardstext{
+		font-size: 10px;
+		padding: 5px;
+		margin-bottom: 20px;
+		visibility: hidden;
+	}
+	.retangulo{	
+		background-color: black;
+		margin-top: 5px;
+		font-family: 'Red Hat Display', sans-serif;
+		padding: 20px;
+		font-weight: bold;
+		font-size: 100px;
+		font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif';
+		color: white;
+	}
+	.backgroundcolor{
+		background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4BBBB;
+		padding: 5px;
+	}
+	.backgroundcolor{
+		background: none;
+		padding: 5px;
 	}
 	.retangulo{	
 		background-color: black;
@@ -280,12 +296,13 @@
 	} 
 	
 	.avatar {
-		height: 200px;
-		width: 220px;
+		height: 120px;
+		width: 140px;
+		margin-top: none;
 		box-sizing: border-box;
 		overflow: hidden;
+		animation: none;
 	}
-	
 	
 	.cardper{
 		margin-left: 20px;
@@ -297,24 +314,25 @@
 		margin-bottom: 20px;
 		background-color: #c4c4c4;
 		flex-direction: column;
+		padding: 0px;
 	}
 	.wrapper{
 		display: grid;
-		grid-template-columns: 350px;
-		grid-auto-rows: 350px;
+		grid-template-columns: 330px;
+		grid-auto-rows: 400px;
 		grid-template-rows: 1.2fr 150px 150px 150px 150px 150px 150px;
 		grid-gap: 20px;
 	}
-	.box0{
+	.boximage{
 		position: relative;
-		width: 350px;
-		height: 300px;
+		width: 330px;
+		height: 250px;
 		background-image: url('img/4.png');
 		background-size: 470px;
 		transform: rotate(0.14deg);
 		grid-row: 1/2;
 	}
-	.box1{		
+	.formacao{		
 		background-color: #4b4b4b;
 		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 		color: white;
@@ -322,27 +340,27 @@
 		
 	}
 	
-	.box2{
+	.diploma{
 		background-color:#4b4b4b;
 		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 		color: white;				
 		grid-row: 3/4;
 	}
 	
-	.box3{
+	.sobre{
 		background-color:#4b4b4b;
 		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 		color: white;				
 		grid-row: 4/5;
 		grid-column: auto;
 	}
-	.box4{
+	.competencia{
 		background-color:#4b4b4b;
 		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 		color: white;
 		grid-row: 5/6;
 	}
-	.box5{
+	.contacto{
 		background-color:#4b4b4b;
 		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 		color: white;
