@@ -21,19 +21,29 @@
 	font-size: 100px;
 	color: #444950;	
 }
-.bodybackground{
-	background-color: #ecf0f1;
-}
 
 .retangulo{	
+	padding: none;
+	height: 580px;
+	width: 120px;
+	display: flex;
+	justify-content: center !important;
+	align-items: center;
 	background-color: black;
 	margin-top: 20px;
+	margin-bottom: 20px;
 	font-family: 'Red Hat Display', sans-serif;
-	padding: 20px;
 	font-weight: bold;
-	font-size: 100px;
+	font-size: 60px;
 	font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif';
 	color: white;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+}
+.blurEffect{
+	background-color: rgba(255,255,255, .15);
+	backdrop-filter: blur(5px);
+	margin-top: 20px;
 }
 
 .roundedbuttons{
@@ -42,9 +52,9 @@
 
 
 .avatar {
-	height: 200px;
-	width: 240px;
-	margin-top: 40px;
+	height: 160px;
+	width: 190px;
+	margin-top: 30px;
 	box-sizing: border-box;
 	border: 5px white solid;
 	overflow: hidden;	
@@ -60,6 +70,67 @@
 	100% {
 		transform: translatey(0px);
 	}
+}
+.projectocard1{
+	background-color: white;
+	height: 580px;
+	width: 350px;
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	padding: none;
+}
+.projectocard1:hover{
+	box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+	
+}
+.projectocard2{
+	height: 580px;
+	width: 350px;
+	background-color: #000;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	padding: 0;
+
+}
+.progress{
+	background: rgba(255,255,255,0.1);
+	justify-content: flex-start;
+	border-radius: 100px;
+	height: 15px;
+	width: 200px;
+	position: relative;
+}
+.progress-value{
+	animation: load 3s normal forwards;
+	box-shadow: 0 10px 40px -10px #fff;
+	border-radius: 100px;
+	background: #fff;
+	height: 15px;
+	width: 0;
+}
+@keyframes load {
+	0% { width: 0; }
+	100% { width: 68%; }
+  }
+.projectcardstext{
+	font-size: 10px;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.modal-xl{
+	width: 1140px;
+}
+.textoh1{
+	letter-spacing:-0.05en;
+	font-weight: bold;
+	font-size: 40px;
 }
 
 .flet1{
@@ -89,14 +160,6 @@
 	padding: 1em;
 }
 
-.img{
-  position: relative;
-  width: 225px;
-  height: 462.02px;
-  background-image: url('img/4.png');
-  background-size: 500px;
-  transform: rotate(0.14deg);
-}
 .centrar{
 	/*display: flex;
 	align-items: center;*/
@@ -155,79 +218,19 @@
 	text-align: none;
 }
 .namebadge{
-	height: 30px;
+	height: 50px;
 	width: 200px;
 	border-radius: 30px;
 	background-color: black;
 	font-size: 20px;
-	text-align: center;
-	align-items: center;	
-
-}
-.carta1{
-	position: absolute;
-	height: 895px;
-	top: 60px;
-	filter: drop-shadow(5px 5px 20px rgba(0,0,0,0.25));
-}
-.projectocard1{
-	background-color: white;
-	height: 650px;
-	width: 400px;
-	margin-top: 20px; 
-	margin-bottom: 20px;
-	padding: none;
-}
-.projectocard1:hover{
-	box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-	
-}
-.projectocard2{
-	height: 650px;
-	width: 400px;
-	background-color:#84817a ;
-	color: black;
-	display: flex;
 	align-items: center;
-	text-align: center;
-	opacity: 0.4;
-	font-weight: bold;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-	margin-top: 20px; 
-	margin-bottom: 20px;
-	padding: none;
+	display: flex !important;
+	justify-content: center !important;
 
 }
-.projectcardstext{
-	font-size: 10px;
-	padding: 5px;
-	margin-bottom: 20px;
-}
 
-.modal-xl{
-	width: 1140px;
-}
-.textoh1{
-	letter-spacing:-0.05en;
-	font-weight: bold;
-	font-size: 40px;
-}
-/*.row{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	background-color: #c4c4c4;
-	flex-direction: row;
-	padding: none;
-	text-align: center;
-}*/
-/*cardper{
-	margin-left: 150px;
-	align-items: center;
-	text-align: center;
-}*/
 .backgroundcolor{
-	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4BBBB;
-	padding: 60px;
+	background: linear-gradient(270deg, #B391C4 0%, rgba(255, 255, 255, 0) 100%), #384573;	
 }
 @media screen and (max-width: 500px){
 	.projectocard1{
