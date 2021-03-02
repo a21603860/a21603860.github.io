@@ -1,3 +1,23 @@
+/*
+Table of Contents
+
+
+
+*/
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background: linear-gradient(270deg, #B391C4 0%, rgba(255, 255, 255, 0) 100%), #384573;	
+}
+
+
+/* =====================================================
+	NavBar
+=======================================================*/
+
+
 .navcor{
 	background-color: transparent;
 
@@ -12,14 +32,81 @@
 .navtextcolor{
 	color: black;	
 }
-.color1{
-	background-color: #fdcb6e;
+
+/*======================================================
+	Wrapper Settings
+========================================================*/
+
+.boximage{
+	position: relative;
+	height: 462.02px;
+	background-image: url('img/4.png');
+	background-size: 500px;
+	transform: rotate(0.14deg);
+	grid-column: 1/2;
+	grid-row: 1/3;
+}
+.formacao{
+	
+	background-color: #4b4b4b;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	color: white;
+	align-items: none;
+	text-align: none;
+	padding: 100px;
 }
 
-.textctype{
-	font-weight: bold;
-	font-size: 100px;
-	color: #444950;	
+.diploma{
+	background-color:#4b4b4b;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	color: white;
+	align-items: none;
+	text-align: none;
+}
+
+.sobre{
+	grid-column: 4/5;
+	grid-row: 1/3;
+	background-color:#4b4b4b;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	color: white;
+	align-items: none;
+	text-align: none;
+}
+.competencia{
+	background-color:#4b4b4b;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	color: white;
+	align-items: none;
+	text-align: none;
+}
+.contacto{
+	background-color:#4b4b4b;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	color: white;
+	align-items: none;
+	text-align: none;
+}
+.namebadge{
+	height: 50px;
+	width: 200px;
+	border-radius: 30px;
+	background-color: black;
+	font-size: 20px;
+	align-items: center;
+	display: flex !important;
+	justify-content: center !important;
+
+}
+
+
+/*======================================================
+	cards Projects settings
+=======================================================*/
+.container{
+	background-color: rgba(255,255,255, .15);
+	backdrop-filter: blur(5px);
+	margin-top: 20px;
 }
 
 .retangulo{	
@@ -32,7 +119,6 @@
 	background-color: black;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	font-family: 'Red Hat Display', sans-serif;
 	font-weight: bold;
 	font-size: 60px;
 	font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif';
@@ -40,17 +126,10 @@
 	writing-mode: vertical-rl;
 	transform: rotate(180deg);
 }
-.blurEffect{
-	background-color: rgba(255,255,255, .15);
-	backdrop-filter: blur(5px);
-	margin-top: 20px;
+
+button{
+	border-radius: 25px !important;
 }
-
-.roundedbuttons{
-	border-radius: 15px ;
-}
-
-
 .avatar {
 	height: 160px;
 	width: 190px;
@@ -118,35 +197,18 @@
 	0% { width: 0; }
 	100% { width: 68%; }
   }
-.projectcardstext{
-	font-size: 10px;
-	padding: 5px;
-	margin-bottom: 20px;
-}
 
-.modal-xl{
-	width: 1140px;
-}
-.textoh1{
+.textHeader{
 	letter-spacing:-0.05en;
 	font-weight: bold;
 	font-size: 40px;
+	text-transform: uppercase;	
 }
 
-.flet1{
-	background-color: #ecf0f1;
-	display: flex;
-	align-items: center;
-	font-family: Apple Chancery, cursive;
-	font-size: 50px;
-}
-.flet2{
-	display: flex;
-	align-items: center;
-}
-
-.html{
-	scroll-behavior: smooth;
+.footerCardText{
+	font-size: 10px;
+	padding: 5px;
+	margin-bottom: 20px;
 }
 
 .wrapper{
@@ -167,72 +229,122 @@
 	text-align: center;
 	position: relative;
 }
-.boximage{
-	position: relative;
-	width: 210.05px;
-	height: 462.02px;
-	background-image: url('img/4.png');
-	background-size: 500px;
-	transform: rotate(0.14deg);
-	grid-column: 1/2;
-	grid-row: 1/3;
+
+
+
+/*=======================================================
+	Modal Settings
+======================================================*/
+p.textoColor{
+	color: blue;
 }
-.formacao{
-	
-	background-color: #4b4b4b;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-	color: white;
-	align-items: none;
-	text-align: none;
+.modal-body{
+	padding: 40px 40px;
+}
+.modal-xl{
+	width: 900px;
+}
+.spacePadding{
+	padding: 0px 40px;
+}
+.spacePadding2{
+	padding: 0px 20px;
 }
 
-.diploma{
-	background-color:#4b4b4b;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-	color: white;
-	align-items: none;
-	text-align: none;
-}
 
-.sobre{
-	grid-column: 4/5;
-	grid-row: 1/3;
-	background-color:#4b4b4b;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-	color: white;
-	align-items: none;
-	text-align: none;
-}
-.competencia{
-	background-color:#4b4b4b;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-	color: white;
-	align-items: none;
-	text-align: none;
-}
-.contacto{
-	background-color:#4b4b4b;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-	color: white;
-	align-items: none;
-	text-align: none;
-}
-.namebadge{
-	height: 50px;
-	width: 200px;
-	border-radius: 30px;
-	background-color: black;
-	font-size: 20px;
-	align-items: center;
-	display: flex !important;
-	justify-content: center !important;
+/*===============================================================
+	phone secssion
+================================================================*/
 
-}
-
-.backgroundcolor{
-	background: linear-gradient(270deg, #B391C4 0%, rgba(255, 255, 255, 0) 100%), #384573;	
-}
 @media screen and (max-width: 500px){
+
+	body{
+		background: linear-gradient(270deg, #B391C4 0%, rgba(255, 255, 255, 0) 100%), #384573;	
+	}
+	
+	.wrapper{
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: 345px;
+		grid-auto-rows: 400px;
+		grid-template-rows: 1.2fr 150px 150px 200px 150px 150px 150px;
+		grid-gap: 20px;
+		
+	}
+	.boximage{
+		position: relative;
+		width: 345px;
+		height: 250px;
+		background-image: url('img/4.png');
+		background-size: 350px;
+		grid-row: 1/2;
+		
+	}
+	.formacao{		
+		background-color: rgba(255,255,255, .15);
+		backdrop-filter: blur(5px);
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+		color: white;
+		grid-row: 2/3;
+		
+	}
+	
+	.diploma{
+		background-color: rgba(255,255,255, .15);
+		backdrop-filter: blur(5px);
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+		color: white;				
+		grid-row: 3/4;
+	}
+	
+	.sobre{
+		background-color: rgba(255,255,255, .15);
+		backdrop-filter: blur(5px);
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+		color: white;				
+		grid-row: 4/5;
+		grid-column: auto;
+	}
+	.competencia{
+		background-color: rgba(255,255,255, .15);
+		backdrop-filter: blur(5px);
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+		color: white;
+		grid-row: 5/6;
+	}
+	.contacto{
+		background-color: rgba(255,255,255, .15);
+		backdrop-filter: blur(5px);
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+		color: white;
+		grid-row: 6/7;
+	
+	}
+	.namebadge{
+		height: 30px;
+		width: 150px;
+		border-radius: 30px;
+		background-color: black;
+		font-size: 20px;
+		align-items: center;
+		display: flex !important;
+		justify-content: center !important;	
+	}
+	.retangulo{
+		height: 80px;
+	    width: 200px;	
+		background-color: black;
+		margin-top: 10px;
+		margin-left: 48px;
+		padding: 20px;
+		font-weight: bold;
+		font-size: 50px;
+		font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif';
+		color: white;
+		writing-mode: horizontal-tb;
+		transform: none;
+	}
+
 	.projectocard1{
 		height: 400px;
 		width: 300px ;
@@ -242,17 +354,14 @@
 		align-items: center !important;
 		text-align: center !important;
 		display: flex !important;
-		margin-left: 35px;
+		margin-left: 8px;
 
 	}
 	.projectocard2{
-		height: 400px;
-		width: 300px;
-		background-color: #2d3436;
-		color: #000000;
-		font-size: 12px;
-		align-items: center;		
-		margin-left: 35px;		
+		display:none;		
+	}
+	button{
+		border-radius: 25px !important;
 	}
 	.projectcardstext{
 		font-size: 10px;
@@ -260,39 +369,23 @@
 		margin-bottom: 20px;
 		visibility: hidden;
 	}
-	.retangulo{	
-		background-color: black;
-		margin-top: 5px;
-		font-family: 'Red Hat Display', sans-serif;
-		padding: 20px;
-		font-weight: bold;
-		font-size: 100px;
-		font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif';
-		color: white;
-	}
 	
-	.backgroundcolor{
-		background: none;
-		padding: 5px;
-	}
-	.retangulo{	
-		background-color: black;
-		margin-top: 10px;
-		font-family: 'Red Hat Display', sans-serif;
-		padding: 20px;
+	
+	
+	.textHeader{
+		letter-spacing:-0.05en;
 		font-weight: bold;
-		font-size: 50px;
-		font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif';
-		color: white;
+		font-size: 16px;
+		text-transform: uppercase;		
 	}
-	.textoh1{
-		font-size: 12px;
-		font-weight: bold;
-	}
+
 	h3{
 		font-size: 12px;
-	} 
-	
+	}
+
+	.footerCardText{
+		display:none;
+	} 	
 	.avatar {
 		height: 120px;
 		width: 140px;
@@ -314,61 +407,9 @@
 		flex-direction: column;
 		padding: 0px;
 	}
-	.wrapper{
-		margin-top: 20px;
-		display: grid;
-		grid-template-columns: 345px;
-		grid-auto-rows: 400px;
-		grid-template-rows: 1.2fr 150px 150px 150px 150px 150px 150px;
-		grid-gap: 20px;
-	}
-	.boximage{
-		position: relative;
+		
+	.modal-xl{
 		width: 345px;
-		height: 250px;
-		background-image: url('img/4.png');
-		background-size: 470px;
-		transform: rotate(0.14deg);
-		grid-row: 1/2;
-		
 	}
-	.formacao{		
-		background-color: #4b4b4b;
-		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-		color: white;
-		grid-row: 2/3;
-		
-	}
-	
-	.diploma{
-		background-color:#4b4b4b;
-		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-		color: white;				
-		grid-row: 3/4;
-	}
-	
-	.sobre{
-		background-color:#4b4b4b;
-		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-		color: white;				
-		grid-row: 4/5;
-		grid-column: auto;
-	}
-	.competencia{
-		background-color:#4b4b4b;
-		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-		color: white;
-		grid-row: 5/6;
-	}
-	.contacto{
-		background-color:#4b4b4b;
-		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-		color: white;
-		grid-row: 6/7;
-	
-	}
-	
-.modal-xl{
-	width: 345px;
-}
+
 }
